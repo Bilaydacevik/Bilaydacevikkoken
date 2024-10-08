@@ -8,107 +8,29 @@
 
 <i> BTK Akademi, HTML5 ile Web Geliştirme dersinden edindiğim notları paylaşıyorum. </i>
 <br>
-<b> İçerik Nelerdir? </b>
-<br> <ul>
-<li> CSS Kutu modeli nedir?</li>
-<li> Kutu Boyutu ve Aralık Ayarlamaları</li>
-<li> Kutu Kenarlık Ayarları</li>
-<li> Kutu Rengi ve Ardalan Ayarları</li>
-<li> Ardalan Resminin Konum Ayarları</li>
-<li> Kutu Davranışını Değiştirme</li>
+<ul>
+    <h3>İçerik Nelerdir?</h3>
+<ul>
+  <li>CSS Kutu modeli nedir?</li>
+  <li>Kutu Boyutu ve Aralık Ayarlamaları</li>
+  <li>Kutu Kenarlık Ayarları</li>
+  <li>Kutu Rengi ve Ardalan Ayarları</li>
+  <li>Ardalan Resminin Konum Ayarları</li>
+  <li>Kutu Davranışını Değiştirme</li>
 </ul>
+ 
+<img src="website2/Bilaydacevikkoken.github.io/pic/open-box.png"> <br>
 
-Css HTML komutlarını bir kutu olarak görür. <br>
+Css HTML komutlarını bir kutu olarak görür. CSS’e birer kutu gibi görünen HTML komutları içerik, iç-aralık (padding), kenarlık ve dış aralıktan (margin) oluşmaktadır.
+<br>
+- Kenarlık-dış nesneler ile: marjin <br>
+- içerik ile kenarlık aralığı: padding
 
-CSS’e birer kutu gibi görünen HTML komutları içerik, iç-aralık (padding), kenarlık ve dış aralıktan (margin) oluşmaktadır.<br>
-
-Kenarlık ve dış nesneler ile aradaki boşluk marjin ile. <br> 
-içerik ile kenarlık aralığı: padding ile. <br>
-
-
-<b> Block ve Inline Komutlar </b>
-
-<p>Kutu modelinde bazı komutlar block bazıları ise inline olarak çalışır. hx, tavle, p gibi blok olarak çalışan komutlar tüm satırı kaplar. (block)
-a,b, em, img gibi komutlar ise sadece bulundukları alanı kaplar. (inline) </p>
+<h2> Block ve Inline Komutlar</h2> 
+Kutu modelinde bazı komutlar block bazıları ise inline olarak çalışır.
+- hx, tavle, p gibi blok olarak çalışan komutlar tüm satırı kaplar. (block) <br>
+- a,b, em, img gibi komutlar ise sadece bulundukları alanı kaplar. (inline) <br>
 <hr>
-
-Kutu bir div tagı olabilir, h1,h2 gibi başlık etiketleri olabilir. Kutuların kenarları görünmez çünkü standartta null olarak işaretlidir. Genişlik, boy ayarlamasını style etiketi içerisinde yapabiliriz.
-
-
-h1 blok tipinde bir davranış sergiler. Bu yüzden satırın tamamını kaplar. Kutunun genişliğini width ile ayarlayabilirim.
-
-
-height: ekleyerek kutunun boyunu da ayarlayabilirim.
-
-margin ve padding eklemesi yaparsam
-
-
-Her bir boşluğu, sağ-sol-alt-üst olmak üzere de ayarlayabilirim.
-
-marjin ya da padding: 0px 50px 10px 20px;
-üst, sağ, alt, sol şeklinde gider.
-
-— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — —
-
-Kutu Kenar Ayarları
-
-Kutu kenarlıklarını kontrol etmek için border özelliği kullanılır.
-
-border-style: kenar çizgi tipini belirler. none olarak gelir. Solid düz çizgidir, dotted noktalı çizgi, dashed kesikli çizgi, double çift çizgi gibi….
-
-
-https://www.btkakademi.gov.tr/portal/course/player/deliver/html5-ile-web-gelistirme-13200
-
-Dikkat edilmesi gerekenler:
-
-Öncelikle border-style’ı belirlemelisin. Border-style none gelir. Diğerlerini belirlesen bile border-style’ı vermeden gözükmeyecektir.
-2. px’i ayrı yazmayın yoksa sonuç verme. 5px 20px gibi kullanılması lazım.
-
-Kutu Ardalanı (Background)
-
-
-
-
-Görselin tekrar etmesine yönelik ise backgroun-repeat özelliğini kullanabiliriz
-
-
-no-repeat: tekrar etmesin
-
-repeat: tekrar etsin
-
-repeat-x: sadece yan yana resimleri yerleştirir.
-
-repeat-y: sadece alt alta resimleri yerleştirir.
-
-
-tekrar etmesin dediğimde bu şekilde çirkin bir şey oluyor… bu resmin konumunu da ayarlayabilirim. background-position ile..
-
-
-top-left: üst sol
-top-center: üstte ortada
-bottom-center: altta ortada
-Bu resimleri body etiketine de uygulayabilirsin.
-
-- background-attachment özelliği, bir sayfadaki arka plan resminin, sayfa içeriğiyle birlikte nasıl davrandığını kontrol eder. Özellikle arka plan resminin, sayfa kaydırıldığında sabit kalıp kalmayacağını veya içerikle birlikte kayıp kaymayacağını belirlemek için kullanılır.
-
-scroll (Varsayılan): Arka plan resmi, sayfa kaydırıldıkça içerikle birlikte hareket eder. Bu varsayılan davranıştır.
-
-fixed: Arka plan resmi, sayfa kaydırılsa bile sabit kalır ve hareket etmez. Bu, genellikle görsel bir efekt oluşturmak için kullanılır.
-
-local: Arka plan resmi, içerikle birlikte kaydırılır. Ancak yalnızca kaydırılabilir bir öğenin (örneğin, bir div'in) içerisi kaydırıldığında arka plan da kayar.
-
-— — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — — Kutunun Davranışı
-
-hx,p,li,form, table,div(block davranış)
-
-a,span,em,b, i (inline davranış)
-
-Bu davranışı değiştirebiliriz:
-
-<style>
-li{display:inline;}
-a{display:block;}
-</style>
-Şimdilik bu kadar. Bu yazı iki bölümden oluşacak. Bir sonraki yazıda görüşmek üzere!
-
+Kutu bir div tagı olabilir, h1,h2 gibi başlık etiketleri olabilir. Kutuların kenarları görünmez çünkü standartta null olarak işaretlidir. Genişlik, boy ayarlamasını style etiketi içerisinde yapabiliriz. h1 blok tipinde bir davranış sergiler. Bu yüzden satırın tamamını kaplar. Kutunun genişliğini width ile ayarlayabilirim.
+</body>
 </html>
